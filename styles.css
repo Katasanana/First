@@ -44,7 +44,6 @@ a:hover {
 
 .btn {
     display: inline-flex;
-    algin-items: center;
     gap: 10px;
     padding: 16px 48px;
 
@@ -181,6 +180,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+
+    padding-top: 140px;
 }
 
 .work {
@@ -188,9 +189,8 @@ a:hover {
     position: relative;
 }
 
-.work:nth-child(even) {
-    position: relative;
-    top: 140px;
+.work:nth-child(odd) {
+    margin-top: -140px;
 }
 
 .work__img {
@@ -225,3 +225,61 @@ a:hover {
 .work:hover .work__name {
     opacity: 1;
 }
+
+.zoomed {
+    transform: scale(2);
+}
+
+.projects {
+}
+
+.container {
+
+}
+
+.projects__title {
+    margin-top: 240px;
+    margin-bottom: 65px;
+
+    font-size: 36px;
+    text-align: center;
+    color: #DEDEDE;
+}
+
+.projects__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.projects__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projects__personal {
+    margin-top: 240px;
+    margin-bottom: 65px;
+
+    font-size: 36px;
+    text-align: center;
+    color: #DEDEDE;
+}
+
+.projects__wrapper-personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.projects__img-personal {
+    height: 560px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 66px;
+}
+
+
+
