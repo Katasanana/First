@@ -9,20 +9,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-      <div class="container">
-          <a href="index.html" class="logo">
-              <img src="images/logo.svg" alt="Лого">
-              Logo Here
-          </a>
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Лого">
+            Logo Here
+        </a>
 
-          <nav class="header__nav">
-              <a href="#!" class="header__link">Home</a>
-              <a href="#!" class="header__link">Work</a>
-              <a href="#!" class="header__link">Contract</a>
-          </nav>
-      </div>
-  </header>
+        <nav class="header__nav">
+            <div class="dropdown">
+                <button class="dropdown__toggle header__link" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </button>
+                <div class="dropdown__menu">
+                    <a href="#!" class="dropdown__item">Home</a>
+                    <a href="#!" class="dropdown__item">Work</a>
+                    <a href="#!" class="dropdown__item">Contract</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
 
 <main class="main">
     <section class="welcome">
